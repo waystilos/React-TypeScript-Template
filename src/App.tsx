@@ -1,12 +1,11 @@
 import * as React from 'react';
 import './App.css';
-import Form from './form/Form';
 
 class App extends React.Component {
   public render() {
     return (
       <div className="App">
-        <Form text="Hello" />
+        <h1>Hello World</h1>
       </div>
     );
   }
