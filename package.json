@@ -130,6 +130,19 @@
       }
     }
   },
+  "nyc": {
+    "lines": 80,
+    "functions": 80,
+    "branches": 80,
+    "check-coverage": true,
+    "exclude": [
+      "node_modules",
+      "bin",
+      "coverage",
+      "__tests__/*",
+      "**/*.test.*"
+    ]
+  },
   "babel": {
     "presets": [
       "react-app"
@@ -137,5 +150,10 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precise-commits && npm run quality"
+    }
   }
 }
