@@ -1,9 +1,23 @@
 {
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
-  "linterOptions": {
-    "exclude": [
-      "config/**/*.js",
-      "node_modules/**/*.ts"
-    ]
-  }
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier",
+    "tslint-config-airbnb"
+  ],
+  "rules": {
+    "arrow-parens": true,
+    "import-name": false,
+    "ter-arrow-parens": true,
+    "trailing-comma": [true, "esSpecCompliant"],
+    "variable-name": [true, "allow-pascal-case"],
+    "semicolon": [true, "always"]
+  },
+  "exclude": [
+    "config/**/*.js",
+    "node_modules/**/*.ts",
+    "sprints/*.js",
+    "dist/**/*.",
+    "coverage/**/*"
+  ]
 }
